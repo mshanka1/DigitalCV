@@ -12,7 +12,6 @@ High and Low Level application design and development.
 """
 EMAIL = "mshanka1@gmail.com"
 cv_dir_path = os.path.dirname(os.path.realpath(__file__))
-cv_doc_filepath = os.path.join(cv_dir_path, 'CV\\')
 cv_html_filepath = os.path.join(cv_dir_path, 'CVHTML\\')+"cv.html"
 profile_pic = os.path.join(cv_dir_path, 'CV\\')+"Photo.jpg"
 if os.path.isfile(cv_html_filepath):
@@ -39,6 +38,7 @@ if os.path.isfile(cv_html_filepath):
     #b.close()
 else:
     import mammoth
+    cv_doc_filepath = os.path.join(cv_dir_path, 'CV\\')
     arr = os.listdir(cv_doc_filepath)
     cv_doc_filepath+=arr[0]
     #print(cv_doc_filepath)
