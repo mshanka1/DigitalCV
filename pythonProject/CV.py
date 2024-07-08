@@ -36,9 +36,9 @@ if os.path.isfile(cv_html_filepath):
     #b = open(cv_html_filepath, 'r')
     #st.html(b.read())
     #b.close()
-else:
-    import mammoth
-    cv_doc_filepath = os.path.join(cv_dir_path, 'CV\\')
+#else:
+    #import mammoth
+    #cv_doc_filepath = os.path.join(cv_dir_path, 'CV\\')
     #arr = os.listdir(cv_doc_filepath)
     #cv_doc_filepath+=arr[0]
     #print(cv_doc_filepath)
