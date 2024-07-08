@@ -39,12 +39,12 @@ if os.path.isfile(cv_html_filepath):
 else:
     import mammoth
     cv_doc_filepath = os.path.join(cv_dir_path, 'CV\\')
-    arr = os.listdir(cv_doc_filepath)
-    cv_doc_filepath+=arr[0]
+    #arr = os.listdir(cv_doc_filepath)
+    #cv_doc_filepath+=arr[0]
     #print(cv_doc_filepath)
-    f = open(cv_doc_filepath, 'rb')
-    b = open(cv_html_filepath, 'wb')
-    document = mammoth.convert_to_html(f)
-    b.write(document.value.encode('utf8'))
-    f.close()
-    b.close()
+    #f = open(cv_doc_filepath, 'rb')
+    #b = open(cv_html_filepath, 'wb')
+    #document = mammoth.convert_to_html(f)
+    #b.write(document.value.encode('utf8'))
+    #f.close()
+    #b.close()
