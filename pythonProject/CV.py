@@ -1,4 +1,3 @@
-import mammoth
 import os
 import streamlit as st
 import streamlit.components.v1 as components
@@ -39,6 +38,7 @@ if os.path.isfile(cv_html_filepath):
     #st.html(b.read())
     #b.close()
 else:
+    import mammoth
     arr = os.listdir(cv_doc_filepath)
     cv_doc_filepath+=arr[0]
     #print(cv_doc_filepath)
