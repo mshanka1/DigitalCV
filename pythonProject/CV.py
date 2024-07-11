@@ -8,11 +8,7 @@ about_page = st.Page(
 )
 
 #--- Navigation Page---
-pg= st.navigation(
-    {
-        "Info": [about_page],
-    }
-)
+pg= st.navigation(pages=[about_page])
 
 #--- Run Navigation ---
 pg.run()
