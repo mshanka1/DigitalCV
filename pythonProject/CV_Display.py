@@ -1,6 +1,6 @@
 import streamlit as st
 
-image_str = "./CV/Photo.png"
+image_str = "Photo.png"
 col1, col2 = st.columns(2,gap='small', vertical_alignment="center")
 with col1:
     st.image(image_str, width=230)
