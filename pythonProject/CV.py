@@ -22,17 +22,17 @@ st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 profile_pic = Image.open(profile_pic)
 # --- HERO SECTION ---
 col1, col2 = st.columns(2, gap="small")
-with col2:
-    st.image(profile_pic, width=230)
 with col1:
+    st.image(profile_pic, width=230)
+with col2:
     st.title(NAME)
     st.write(DESCRIPTION)
     st.write("📫", EMAIL)
     st.write('\n')
     st.subheader("About my Experience & Qulifications")
-    with open(cv_html_filepath, 'r') as f:
-        html_data = f.read()
-    st.components.v1.html(html_data, scrolling=True, height=500)
+    #with open(cv_html_filepath, 'r') as f:
+        #html_data = f.read()
+    #st.components.v1.html(html_data, scrolling=True, height=500)
     #b = open(cv_html_filepath, 'r')
     #st.html(b.read())
     #b.close()
