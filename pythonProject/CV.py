@@ -11,13 +11,13 @@ Senior Embedded Software Engineer with 19 Yrs in
 High and Low Level application design and development.
 """
 EMAIL = "mshanka1@gmail.com"
-cv_dir_path = os.path.dirname(os.path.realpath(__file__))
-cv_html_filepath = os.path.join(cv_dir_path, 'CVHTML\\')+"cv.html"
-profile_pic = os.path.join(cv_dir_path, 'CV\\')+"Photo.jpg"
+#cv_dir_path = os.path.dirname(os.path.realpath(__file__))
+cv_html_filepath = "./CVHTML/cv.html"
+profile_pic = "./CV/Photo.jpg"
 if os.path.isfile(cv_html_filepath):
     print("file is there")
-    arr = os.listdir(cv_doc_filepath)
-    cv_doc_filepath += arr[0]
+    #arr = os.listdir(cv_doc_filepath)
+    #cv_doc_filepath += arr[0]
     st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
     profile_pic = Image.open(profile_pic)
     # --- HERO SECTION ---
