@@ -4,7 +4,8 @@ import os
 fileDir = os.path.dirname(os.path.realpath('__file__'))
 filename = os.path.join(fileDir, 'pythonProject/CV/Photo.png')
 #image_str = "../CV/Photo.png"
-st.title(filename)
+#st.title(filename)
+st.image(filename, width=230)
 #col1, col2 = st.columns(2,gap='small', vertical_alignment="center")
 #with col1:
 #    st.image(image_str, width=230)
