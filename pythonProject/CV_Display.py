@@ -7,5 +7,5 @@ with col2:
     st.title("Shankar Manne", anchor=False)
     st.write(
         "Senior Embedded Software Engineer with 19 Yrs of exp in developing both "
-        "Low level and High Level applications"
+        "Low level and High Level applications."
     )
