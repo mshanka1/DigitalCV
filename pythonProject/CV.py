@@ -2,7 +2,7 @@ import streamlit as st
 
 #--- Page Setup---
 about_page = st.Page(
-    page="CV_Display.py",
+    page="CVHTML/cv.html",
     title="About Me",
     default=True,
 )
