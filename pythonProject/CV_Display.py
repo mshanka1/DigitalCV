@@ -1,8 +1,10 @@
 import streamlit as st
+import os
 
+fileDir = os.path.dirname(os.path.realpath('__file__'))
 
-image_str = "../CV/Photo.png"
-st.title(image_str)
+#image_str = "../CV/Photo.png"
+st.title(fileDir)
 #col1, col2 = st.columns(2,gap='small', vertical_alignment="center")
 #with col1:
 #    st.image(image_str, width=230)
