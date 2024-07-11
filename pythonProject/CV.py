@@ -19,7 +19,7 @@ print("file is there")
 #arr = os.listdir(cv_doc_filepath)
 #cv_doc_filepath += arr[0]
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
-profile_pic = Image.open(profile_pic)
+#profile_pic = Image.open(profile_pic)
 # --- HERO SECTION ---
 col1, col2 = st.columns(2, gap="small")
 with col1:
