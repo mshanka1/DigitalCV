@@ -14,20 +14,20 @@ EMAIL = "mshanka1@gmail.com"
 #cv_dir_path = os.path.dirname(os.path.realpath(__file__))
 cv_html_filepath = "./CVHTML/cv.html"
 profile_pic = "./CV/Photo.jpg"
-if os.path.isfile(cv_html_filepath):
-    print("file is there")
-    #arr = os.listdir(cv_doc_filepath)
-    #cv_doc_filepath += arr[0]
-    st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
-    profile_pic = Image.open(profile_pic)
-    # --- HERO SECTION ---
-    col1, col2 = st.columns(2, gap="small")
-    with col2:
-        st.image(profile_pic, width=230)
-    with col1:
-        st.title(NAME)
-        st.write(DESCRIPTION)
-        st.write("📫", EMAIL)
+#if os.path.isfile(cv_html_filepath):
+print("file is there")
+#arr = os.listdir(cv_doc_filepath)
+#cv_doc_filepath += arr[0]
+st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
+profile_pic = Image.open(profile_pic)
+# --- HERO SECTION ---
+col1, col2 = st.columns(2, gap="small")
+with col2:
+    st.image(profile_pic, width=230)
+with col1:
+    st.title(NAME)
+    st.write(DESCRIPTION)
+    st.write("📫", EMAIL)
     st.write('\n')
     st.subheader("About my Experience & Qulifications")
     with open(cv_html_filepath, 'r') as f:
