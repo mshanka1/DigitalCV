@@ -2,9 +2,9 @@ import streamlit as st
 import os
 
 fileDir = os.path.dirname(os.path.realpath('__file__'))
-
+filename = os.path.join(fileDir, 'pythonProject/CV/Photo.png')
 #image_str = "../CV/Photo.png"
-st.title(fileDir)
+st.title(filename)
 #col1, col2 = st.columns(2,gap='small', vertical_alignment="center")
 #with col1:
 #    st.image(image_str, width=230)
