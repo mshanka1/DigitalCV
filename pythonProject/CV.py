@@ -6,7 +6,6 @@ about_page = st.Page(
     title="About Me",
     default=True,
 )
-
 #--- Navigation Page---
 pg= st.navigation(pages=[about_page])
 
